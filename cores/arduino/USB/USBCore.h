@@ -241,7 +241,9 @@ typedef struct
 typedef struct
 {
 	//	IAD
+	#ifdef COMPOSITE_DEVICE
 	IADDescriptor				iad;	// Only needed on compound device
+	#endif
 
 	//	Control
 	InterfaceDescriptor			cif;

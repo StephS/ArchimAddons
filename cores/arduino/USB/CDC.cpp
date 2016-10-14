@@ -60,7 +60,9 @@ static volatile int32_t breakValue = -1;
 _Pragma("pack(1)")
 static const CDCDescriptor _cdcInterface =
 {
+	#ifdef COMPOSITE_DEVICE
 	D_IAD(0,2,CDC_COMMUNICATION_INTERFACE_CLASS,CDC_ABSTRACT_CONTROL_MODEL,1),
+	#endif
 
 	//	CDC communication interface
 	D_INTERFACE(CDC_ACM_INTERFACE,1,CDC_COMMUNICATION_INTERFACE_CLASS,CDC_ABSTRACT_CONTROL_MODEL,0),
@@ -77,7 +79,9 @@ static const CDCDescriptor _cdcInterface =
 };
 static const CDCDescriptor _cdcOtherInterface =
 {
+	#ifdef COMPOSITE_DEVICE
 	D_IAD(0,2,CDC_COMMUNICATION_INTERFACE_CLASS,CDC_ABSTRACT_CONTROL_MODEL,1),
+	#endif
 
 	//	CDC communication interface
 	D_INTERFACE(CDC_ACM_INTERFACE,1,CDC_COMMUNICATION_INTERFACE_CLASS,CDC_ABSTRACT_CONTROL_MODEL,0),
