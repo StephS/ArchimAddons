@@ -18,7 +18,7 @@
 #define __USBDESC_H__
 
 #define CDC_ENABLED
-//#define PLUGGABLE_USB_ENABLED
+#define PLUGGABLE_USB_ENABLED
 //#define COMPOSITE_DEVICE
 
 #ifdef CDC_ENABLED
