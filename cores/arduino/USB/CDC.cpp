@@ -47,7 +47,7 @@ typedef struct
 	uint8_t		lineState;
 } LineInfo;
 
-static volatile LineInfo _usbLineInfo = { 
+static volatile LineInfo _usbLineInfo = {
     57600, // dWDTERate
     0x00,  // bCharFormat
     0x00,  // bParityType
@@ -74,8 +74,8 @@ static const CDCDescriptor _cdcInterface =
 
 	//	CDC data interface
 	D_INTERFACE(CDC_DATA_INTERFACE,2,CDC_DATA_INTERFACE_CLASS,0,0),
-	D_ENDPOINT(USB_ENDPOINT_OUT(CDC_ENDPOINT_OUT),USB_ENDPOINT_TYPE_BULK,512,0),
-	D_ENDPOINT(USB_ENDPOINT_IN (CDC_ENDPOINT_IN ),USB_ENDPOINT_TYPE_BULK,512,0)
+	D_ENDPOINT(USB_ENDPOINT_OUT(CDC_ENDPOINT_OUT),USB_ENDPOINT_TYPE_BULK,64,0),
+	D_ENDPOINT(USB_ENDPOINT_IN (CDC_ENDPOINT_IN ),USB_ENDPOINT_TYPE_BULK,64,0)
 };
 static const CDCDescriptor _cdcOtherInterface =
 {
@@ -323,7 +323,7 @@ int32_t Serial_::readBreak() {
 	uint8_t enableInterrupts = ((__get_PRIMASK() & 0x1) == 0 && (__get_FAULTMASK() & 0x1) == 0);
 
 	// disable interrupts,
-	// to avoid clearing a breakValue that might occur 
+	// to avoid clearing a breakValue that might occur
 	// while processing the current break value
 	__disable_irq();
 
