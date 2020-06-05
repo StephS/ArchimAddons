@@ -10,7 +10,7 @@
       },
       "platforms": [
         {
-          "name": "Archim",
+          "name": "Archim2",
           "architecture": "sam",
           "version": "1.6.12",
           "category": "Contributed",
