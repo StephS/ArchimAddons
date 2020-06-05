@@ -1,4 +1,4 @@
-archim.name=Archim
+archim.name=Archim Marlin v2
 archim.upload.tool=bossac
 archim.upload.protocol=sam-ba
 archim.upload.maximum_size=524288

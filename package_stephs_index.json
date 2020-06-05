@@ -10,20 +10,20 @@
       },
       "platforms": [
         {
-          "name": "Archim2",
+          "name": "Archim",
           "architecture": "sam",
-          "version": "1.6.12",
+          "version": "1.6.12a",
           "category": "Contributed",
-          "url": "https://github.com/StephS/ArchimAddons/releases/download/v1.6.12/archim-1.6.12.zip",
-          "archiveFileName": "archim-1.6.12.zip",
-          "checksum": "SHA-256:e6e40b811416dadf9f7211142ef705830d4ac83b640c8c027c02305f21576683",
-          "size": "17506882",
+          "url": "https://github.com/StephS/ArchimAddons/releases/download/v1.6.12/archim-1.6.12a.zip",
+          "archiveFileName": "archim-1.6.12a.zip",
+          "checksum": "SHA-256:03ca81931ff18443ff901c52dbf7df5f1be2063a68ff22ac6ff99d54b8055734",
+          "size": "17506890",
           "help": {
             "online": "https://github.com/ultimachine/Archim/wiki"
           },
           "boards": [
             {
-              "name": "Archim"
+              "name": "Archim Marlin v2"
             }
           ],
           "toolsDependencies": [
