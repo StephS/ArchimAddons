@@ -12,12 +12,12 @@
         {
           "name": "Archim",
           "architecture": "sam",
-          "version": "1.6.12a",
+          "version": "1.6.12-a",
           "category": "Contributed",
-          "url": "https://github.com/StephS/ArchimAddons/releases/download/v1.6.12a/archim-1.6.12a.zip",
-          "archiveFileName": "archim-1.6.12a.zip",
-          "checksum": "SHA-256:03ca81931ff18443ff901c52dbf7df5f1be2063a68ff22ac6ff99d54b8055734",
-          "size": "17506890",
+          "url": "https://github.com/StephS/ArchimAddons/releases/download/v1.6.12-a/archim-1.6.12-a.zip",
+          "archiveFileName": "archim-1.6.12-a.zip",
+          "checksum": "SHA-256:095521ef990527dc272675b24a951f09f62178c7e7bc624706e59bcf5300b36a",
+          "size": "17506889",
           "help": {
             "online": "https://github.com/ultimachine/Archim/wiki"
           },
